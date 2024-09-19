@@ -1,0 +1,509 @@
+/* Style Sheet for Web Page */
+
+/* WEB FONT */
+@import url(https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap);
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    margin-top: 80px;
+}
+
+.name {
+    padding: 14px;
+    margin-bottom: -5px;
+    margin-left: 3px;
+    font-size: 15px;
+    font-family: "Playwrite AU NSW", cursive;
+}
+
+body {
+    font: normal 18px/22px "Varela Round", sans-serif;
+    background-color: lightsteelblue;
+    color: #2e2e2e;
+    margin-top: 60px;
+    margin-left: 210px;
+    margin-right: 30px;
+}
+
+main {
+    flex: 1;
+}
+
+h1, h2, h3 {
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 46px;
+    color: black;
+    text-shadow: 
+        2px 2px 0 whitesmoke,
+        2px 2px 0 whitesmoke,
+        2px 2px 0 whitesmoke,
+        2px 2px 0 whitesmoke;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: black;
+    text-shadow: 
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    color: black;
+    text-shadow: 
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray,
+        1px 1px 0 darkgray;
+  }
+
+p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+h3 + p {
+    margin: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+p + p {
+    margin: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.background {
+    text-align: center;
+}
+
+section[id], article[id] {
+    scroll-margin-top: 90px;
+}
+
+article {
+    padding: 20px;
+    border: 2px solid dimgray;
+}
+
+div {
+    padding: 5px;
+}
+
+table {
+    padding: 5px;
+    border: 5px outset #ddd;
+    background-color: rgba(224, 255, 255, 0.299);
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+td {
+    padding-left: 15px;
+}
+
+td + td + td {
+    padding-left: 0;
+    text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+form {
+    padding: 5px;
+    margin-left: 20px;
+    border: 7px outset #ddd;
+    background-color: rgba(224, 255, 255, 0.299);
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+legend {
+    text-decoration: underline;
+    text-align: center;
+    margin-left: -25px;
+}
+
+fieldset {
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+button {
+    padding: 2px;
+    font-size: 14px;
+    border: 3px outset #ddd;
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 5px;
+}
+
+.divider {
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 20px 0;
+    width: 100%;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    height: 20px;
+    background-color: darkslategray;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* List Styles */
+h3 + ul {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+li ul {
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+ol, ul {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+ul ul, ol ol {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Specific Styles for Nested Lists */
+li {
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+li > ul, li > ol {
+    margin-left: 20px;
+    margin-right: 10px;
+    list-style-type: disc;
+    font-size: 16px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul ul {
+    list-style-type: circle;
+}
+
+ol ol {
+    list-style-type: lower-alpha;
+}
+
+p + ol {
+    margin-left: 60px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Projects Images */
+/* Adventure Game */
+.ag-row1, .ag-row2, .ag-row3 {
+    display: flex;
+}
+
+.ag-row1-col1 {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.ag-row1-col2 {
+    flex: 66.67%;
+    padding: 5px;
+}
+
+.ag-row2-col1, .ag-row2-col2 {
+    flex: 50%;
+    padding: 5px;
+}
+
+.ag-row3-col1 {
+    flex: 40%;
+    padding: 5px;
+}
+
+.ag-row3-col2 {
+    flex: 60%;
+    padding: 5px;
+}
+
+/* Time Bot */
+.tb-row1, .tb-row2 {
+    display: flex;
+}
+
+.tb-row1-col1 {
+    flex: 55%;
+    padding: 5px;
+}
+
+.tb-row1-col2 {
+    flex: 45%;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tb-row2-col1 {
+    flex: 60%;
+    padding: 5px;
+}
+
+.tb-row2-col2 {
+    flex: 40%;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* To-Do List */
+.tdl-row1 {
+    display: flex;
+}
+
+.tdl-row1-col1, .tdl-row1-col2 {
+    flex: 50%;
+    padding: 5px;
+}
+
+.tdl-app, .tdl-func {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/* Contact Management System */
+.cms-row1, .cms-row2, .cms-row3, .cms-row4 {
+    display: flex;
+}
+
+.cms-row1-col1, .cms-row1-col2 {
+    flex: 50%;
+    padding: 5px;
+}
+
+.cms-row1-col2 {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cms-row2-col2 {
+    flex: 52%;
+    padding: 5px;
+}
+
+.cms-row2-col1 {
+    flex: 48%;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cms-create-backup, .cms-find-backup, .cms-restore-backup, .cms-merge, .cms-export, .cms-import1, .cms-import2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 5px;
+}
+
+.cms-row3-col1, .cms-row3-col2 {
+    flex: 50%;
+    padding: 5px;
+}
+
+.cms-edit2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.cms-delete {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Basic Library Management System */
+.lms-validate, .lms-user, .lms-book, .lms-author, .lms-library, .lms-library2, .lms-userinterface1, .lms-userinterface2, .lms-userinterface3, .lms-userinterface4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.lms-userinput {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Library Management System with 
+Database Integration */
+.dilm-database {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.dilm-database2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.dilm-row1, .dilm-row2 {
+    display: flex;
+}
+
+.dilm-row1-col1 {
+    flex: 45%;
+    padding: 5px;
+    padding-left: -5px;
+}
+
+.dilm-row1-col2 {
+    flex: 55%;
+    padding: 5px;
+    padding-right: -5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.dilm-row2 {
+    margin-top: -20px;
+}
+
+.dilm-row2-col1 {
+    flex: 55%;
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.dilm-row2-col2 {
+    flex: 45%;
+    padding: 5px;
+}
+
+.dilm-library, .dilm-library2, .dilm-library3, .dilm-library4, .dilm-library5, .dilm-library6, .dilm-library7, .dilm-library8, .dilm-userinput, .dilm-userinput2, .dilm-userinput3, .dilm-userinterface, .dilm-userinterface2, .dilm-userinterface3, .dilm-userinterface4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.dilm-erd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.dilm-validate-inputs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+/* e-Commerce API */
+.api2, .api7, .api8, .api9, .api11, .api14, .api15, .api16, .api17, .api18, .api-erd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+/* Card Fraud Transaction Simulator */
+.term-profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.image-captions {
+    font-family: "Playwrite AU NSW", cursive;
+    text-align: center;
+}

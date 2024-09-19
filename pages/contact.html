@@ -1,0 +1,93 @@
+<!-- 
+ 5. Contact Page/Section:
+    - Provide a way for visitors to get in touch with you.
+    - Include a contact form, your email address, and links to your social media profiles.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Contact Information">
+        <meta name="author" content="Taylor Miseray">
+        <link rel="stylesheet" type="text/css" href="..\style-sheets\styles.css">
+        <link rel="stylesheet" type="text/css" href="..\style-sheets\main-nav.css">
+        <link rel="stylesheet" type="text/css" href="..\style-sheets\contact-nav.css">
+    </head>
+
+    <body>
+        <nav class="main-nav-bar">
+            <div id="menu" class="menu">
+                <ul class="menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.html#about-me">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <br>
+            <h1>Contact Me</h1>
+            <p>If you would like to reach me: <br>Please fill out the form below!</p>
+        </header>
+        <br>
+        <main>
+            <nav class="contact-nav">
+                <div class="contact-menu" id="contact-menu">
+                    <figure>
+                        <img id="object1" src="..\images\profile-picture.jpg" width="100%" alt="Headshot of Taylor Miseray">
+                        <figcaption class="name">
+                            &#126; Taylor Miseray
+                        </figcaption>
+                    </figure>
+                    <ul class="contact-menu-items">
+                        <li><a href="https://www.linkedin.com/in/taylor-miseray">LinkedIn</a></li>
+                        <li><a href="https://github.com/Tmiseray">GitHub</a></li>
+                        <li><a href="mailto:taylormiseray@gmail.com&subject=Portfolio Inquiry&body=Add your inquiry here">Send Email</a></li>
+                        <li><a href="sms:+18504909762">Send Text</a></li>
+                        <li><a href="tel:+18504909762">Call Phone</a></li>
+                    </ul>    
+                </div>
+            </nav>
+            <h2>Contact Form</h2>
+
+            <form action="/contact" method="post">
+                <fieldset>
+                    <legend><strong>Contact Information</strong></legend>
+
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" placeholder="Enter your full name" size="65" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" size="70" required>
+                    <br>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your phone number" pattern="[0-9]{10}" size="59" required>
+                    <br>
+                    <label>Preferred Contact Method:</label>
+                    <input type="radio" id="email" name="contact-method" value="email">
+                    <label for="email">Email</label>
+                    <input type="radio" id="phone" name="contact-method" value="phone">
+                    <label for="phone">Phone</label>
+                    <br>
+                    <label for="comments">Comments:</label>
+                    <br>
+                    <textarea name="comments" id="comments" rows="5" cols="50" placeholder="Enter your comments here."></textarea>
+                    <br>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+            <br>
+            <br>
+        </main>
+        <hr class="divider">
+        <footer>
+            <p>&copy; 2024 Taylor Miseray. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

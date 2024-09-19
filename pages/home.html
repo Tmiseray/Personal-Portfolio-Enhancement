@@ -1,0 +1,185 @@
+<!-- 
+ 1. Home Page/Section:
+    - The main landing page that provides an introduction to you and your portfolio.
+    - May include a brief bio, your name, a profile picture, and a welcome message.
+
+ 2. About Me Page/Section:
+    - A page that offers more detailed information about yourself.
+    - Include your background, education, career goals, and personal interests.
+
+4. Skills Page/Section:
+    - Highlight your technical skills, languages, frameworks, and software proficiency.
+    - You can use a visual representation like a skill bar or chart.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Taylor Miseray - Personal Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Digital Portfolio">
+        <meta name="author" content="Taylor Miseray">
+        <link rel="stylesheet" type="text/css" href="..\style-sheets\styles.css">
+        <link rel="stylesheet" type="text/css" href="..\style-sheets\main-nav.css">
+        <link rel="stylesheet" type="text/css" href="..\style-sheets\about-me-nav.css">
+    </head>
+
+    <body>
+        <nav class="main-nav-bar">
+            <div id="menu" class="menu">
+                <ul class="menu-items">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <br>
+            <h1>Personal Portfolio Home Page</h1>
+            <p>
+                Welcome to my personal digital portfolio! <br>Below you will find a brief biography and more details about me. <br>At the top of the page, you will find a navigation menu to help direct you to different sections and additional pages within my portfolio.
+            </p>
+        </header>
+        <br>
+        <main>
+            <nav class="about-me-nav">
+                <div id="about-me-menu" class="about-me-menu">
+                    <figure>
+                        <img id="object1" src="..\images\profile-picture.jpg" width="100%" alt="Headshot of Taylor Miseray">
+                        <figcaption class="name">
+                            &#126; Taylor Miseray
+                        </figcaption>
+                    </figure>
+                    <ul class="about-me-menu-items">
+                        <li><a href="#background">Background</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#career-goals">Career Goals</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section id="about-me">
+                <h2><strong>About Me</strong></h2>
+
+                <article id="background">
+                    <h3>Background</h3>
+                    <p class="background">I&#39;m Taylor Miseray, a passionate self-learner from Florida, who made the bold transition from customer service to the world of technology—and it&#39;s been an exciting journey ever since!<br>My creativity and natural problem-solving abilities have fueled my development skills, and I&#39;ve been constantly motivated by the progress I&#39;ve made.<br>In early 2024, I embarked on earning certifications in Software Development, diving deep into the field, and I haven&#39;t looked back.<br>With my artistic background as a tattoo artist, I bring a keen attention to detail to every project, blending both creativity and precision into my work.</p>
+                </article>
+                <br>
+                <article id="education">
+                    <h3>Education</h3>
+                    <p>
+                        <ul>
+                            <li><strong>Coding Temple</strong>
+                                <ul>
+                                    <li>Location: <i>Online</i></li>
+                                    <li>Discipline: <i>Software Engineering</i></li>
+                                    <li>Year: <i>2024</i></li>
+                                </ul>
+                            </li>
+                            <li><strong>Coursera</strong>
+                                <ul>
+                                    <li>Location: <i>Online</i></li>
+                                    <li>Disciplines: <i>Python, Data Analysis, SQL</i></li>
+                                    <li>Year: <i>2024</i></li>
+                                </ul>
+                            </li>
+                            <li><strong>Escambia High School</strong>
+                                <ul>
+                                    <li>Location: <i>Pensacola, FL</i></li>
+                                    <li>Discipline: <i>Diploma</i></li>
+                                    <li>Year: <i>2010</i></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                </article>
+                <br>
+                <article id="career-goals">
+                    <h3>Career Goals</h3>
+                    <p>
+                        <ul>
+                            <li>Expand Professional Network</li>
+                            <li>Enhance Skillsets</li>
+                            <li>Earn Certifications</li>
+                            <li>Gain New Experiences</li>
+                            <li>Innovate a Process or Product</li>
+                            <li>Work-Life Balance</li>
+                            <li>Become a Digital Nomad</li>
+                        </ul>
+                    </p>
+                </article>
+                <br>
+                <article id="interests">
+                    <h3>Interests</h3>
+                    <p>
+                        <ul>
+                            <li>Traveling the World</li>
+                            <li>Artictic Endeavors</li>
+                            <li>Drawing/Tattooing</li>
+                            <li>Gaming
+                                <ul>
+                                    <li>Billiards</li>
+                                    <li>Board Games</li>
+                                    <li>Card Games</li>
+                                    <li>Escape Rooms</li>
+                                    <li>Video Games</li>
+                                </ul>
+                            </li>
+                            <li>Culinary Enthusiast</li>
+                            <li>Museums/Exhibits</li>
+                            <li>Astronomy</li>
+                        </ul>
+                    </p>
+                </article>
+            </section>
+            <br>
+            <section id="skills">
+                <h2><strong>Technical Skills</strong></h2>
+                <table>
+                    <tr>
+                        <th>Languages/Frameworks</th>
+                        <th>Proficiency</th>
+                        <th>Years of Experience</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermediate</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Beginner</td>
+                        <td>&lt; 1</td>
+                    </tr>
+                    <tr>
+                        <td>Flask</td>
+                        <td>Beginner</td>
+                        <td>&lt; 1</td>
+                    </tr>
+                    <tr>
+                        <td>Postman API</td>
+                        <td>Beginner</td>
+                        <td>&lt; 1</td>
+                    </tr>
+                    <tr>
+                        <td>Draw.io</td>
+                        <td>Beginner</td>
+                        <td>&lt; 1</td>
+                    </tr>
+                </table>
+            </section>
+            <br>
+            <br>
+        </main>
+        <hr class="divider">
+        <footer>
+            <p>&copy; 2024 Taylor Miseray. All rights reserved.</p>
+        </footer>
+    </body>
+</html>

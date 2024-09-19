@@ -1,0 +1,110 @@
+/* About Me Page Navigation */
+
+.about-me-nav {
+    height: calc(100vh - 70px);
+    width: 180px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 70px;
+    overflow-y: auto;
+    background-color: darkgray;
+    box-shadow: 2px 2px 2px 2px rgba(50, 50, 50, 0.6);
+}
+
+.about-me-menu {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.about-me-menu-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-me-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-me-nav li, .about-me-nav a {
+    width: 150px;
+    line-height: 26px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.about-me-menu-items li {
+    margin-bottom: 10px;
+}
+
+.about-me-menu a {
+    color: whitesmoke;
+    text-shadow: 2px 2px 0 black;
+    height: 100%;
+}
+
+.about-me-menu-items a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 2px 2px 0 black;
+}
+
+.about-me-menu a:visited {
+    color: rgb(174, 255, 255, 0.75);
+}
+
+.about-me-menu-items a:visited {
+    color: rgb(174, 255, 255, 0.75);
+}
+
+.about-me-menu a:hover {
+    cursor: pointer;
+    background-color: lightslategray !important;
+    color: whitesmoke !important;
+    text-shadow: none !important;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+.about-me-menu-items a:hover {
+    cursor: pointer;
+    background-color: lightslategray !important;
+    color: whitesmoke !important;
+    text-shadow: none !important;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease !important;
+}
+
+.about-me-menu a:active {
+    background-color: whitesmoke !important;
+    color: black !important;
+    text-shadow: none !important;
+}
+
+.about-me-menu-items a:active {
+    background-color: whitesmoke !important;
+    color: black !important;
+    text-shadow: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-me-nav{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        top: 60px;
+        overflow-y: visible;
+    }
+    main {
+        margin-left: 0;
+    }
+}
