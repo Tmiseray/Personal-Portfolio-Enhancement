@@ -69,7 +69,7 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 33px;
     margin-bottom: 20px;
     text-decoration: underline;
@@ -78,7 +78,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 28px;
     margin-bottom: 10px;
     text-shadow: 
@@ -129,7 +129,7 @@ article {
 }
 
 article:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
     transition: transform 0.4s ease-in-out;
 }
 
@@ -555,4 +555,12 @@ Database Integration */
 .image-captions {
     font-family: "Playwrite AU NSW", cursive;
     text-align: center;
+}
+
+
+@media screen and (min-width: 1000px) {
+    article:hover {
+        transform: scale(1.04);
+        transition: transform 0.4s ease-in-out;
+    }
 }
