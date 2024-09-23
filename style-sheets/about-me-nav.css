@@ -1,5 +1,6 @@
 /* About Me Page Navigation */
 
+
 .about-me-nav {
     height: calc(100vh - 70px);
     width: 180px;
@@ -30,24 +31,25 @@
     padding: 0;
 }
 
-.about-me-nav li, .about-me-nav a {
+.about-me-nav #li, .about-me-nav #a {
     width: 150px;
     line-height: 26px;
     font-size: 24px;
     text-align: center;
+    border-radius: 40px;
 }
 
-.about-me-menu-items li {
+.about-me-menu-items #li {
     margin-bottom: 10px;
 }
 
-.about-me-menu a {
+.about-me-menu #a {
     color: whitesmoke;
     text-shadow: 2px 2px 0 black;
     height: 100%;
 }
 
-.about-me-menu-items a {
+.about-me-menu-items #a {
     display: block;
     width: 100%;
     padding: 10px;
@@ -58,15 +60,15 @@
     text-shadow: 2px 2px 0 black;
 }
 
-.about-me-menu a:visited {
+.about-me-menu #a:visited {
     color: rgb(174, 255, 255, 0.75);
 }
 
-.about-me-menu-items a:visited {
+.about-me-menu-items #a:visited {
     color: rgb(174, 255, 255, 0.75);
 }
 
-.about-me-menu a:hover {
+.about-me-menu #a:hover {
     cursor: pointer;
     background-color: lightslategray !important;
     color: whitesmoke !important;
@@ -75,7 +77,7 @@
     transition: all 0.3s ease !important;
 }
 
-.about-me-menu-items a:hover {
+.about-me-menu-items #a:hover {
     cursor: pointer;
     background-color: lightslategray !important;
     color: whitesmoke !important;
@@ -84,27 +86,104 @@
     transition: all 0.3s ease !important;
 }
 
-.about-me-menu a:active {
+.about-me-menu #a:active {
     background-color: whitesmoke !important;
     color: black !important;
     text-shadow: none !important;
+    border: 4px inset #ddd;
+    animation: 1s infinite alternate enhanceButton, 1s infinite alternate shadowEffect;
 }
 
-.about-me-menu-items a:active {
+.about-me-menu-items #a:active {
     background-color: whitesmoke !important;
     color: black !important;
     text-shadow: none !important;
+    border: 4px inset #ddd;
+    animation: 1s infinite alternate enhanceButton, 1s infinite alternate shadowEffect;
 }
 
-@media only screen and (max-width: 600px) {
+@keyframes enhanceButton {
+    from { transform: scale(0.9); }
+    to { transform: scale(1.1); }
+}
+
+@keyframes shadowEffect {
+    from { box-shadow: 1px 1px 5px #ddd; }
+    to { box-shadow: 2px 2px 10px #ddd; }
+}
+
+/* Side Dropdown Menu (Top Left Corner) */
+.side-dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    z-index: 1000;
+}
+
+.side-dropdown .dropdown-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: 0.5s ease-out;
+}
+
+.side-dropdown .dropdown-content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+
+.side-dropdown .dropdown-content a,
+.side-dropdown .dropdown-content li {
+    padding: 12px 16px;
+    display: block;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease-out;
+}
+
+.side-dropdown:hover .dropdown-content {
+    outline: none;
+    transform: translateY(20px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.side-dropdown:focus .dropdown-button {
+    background-color: lightblue;
+    color: black;
+}
+
+
+@media (min-width: 768px) {
+    .side-dropdown {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
     .about-me-nav{
-        position: fixed;
-        width: 100%;
-        height: auto;
-        top: 60px;
-        overflow-y: visible;
+        display: none;
     }
     main {
         margin-left: 0;
+    }
+    .side-dropdown {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 20px;
+        z-index: 1000;
     }
 }
