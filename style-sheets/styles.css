@@ -472,12 +472,12 @@ ol:not(
 
 @media (max-width: 480px) {
     label, input, textarea, button {
-        font-size: 1.2em; /* Adjust as needed */
+        font-size: 1.2em;
         padding: 8px;
     }
 
     form {
         width: 100%;
-        padding: 10px; /* Adjust for smaller screens */
+        padding: 10px;
     }
 }
