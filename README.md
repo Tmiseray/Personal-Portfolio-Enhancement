@@ -2,18 +2,16 @@
  Coding Temple - Module 8 Mini-Project
 
 
-# Personal-Portfolio
- Coding Temple Module 7 Mini-Project
-
-This repository contains the code and resources for my personal portfolio website, a place where I showcase my skills, projects, and background in software development. The website is designed to be visually engaging and easy to navigate, providing visitors with an in-depth view of my professional journey and technical expertise.
+This repository contains the code and resources for my enhanced personal portfolio website. This project builds on my previous portfolio by integrating advanced CSS techniques to make the site more visually engaging, interactive, and responsive. The enhanced design showcases my skills, projects, and background more effectively, offering a polished user experience for visitors.
 
 ## Overview
-The Personal Portfolio is a static website built using HTML and CSS. The site features multiple pages that present various aspects of my work and background, such as my bio, skills, projects, and contact information.
+The Personal Portfolio is a static website built using HTML and CSS, with additional enhancements applied to improve both aesthetics and functionality. This site showcases various aspects of my work, including my biography, skills, project portfolio, and contact information.
 
 ## Key Features
 1. **Navigation**
     - Every page includes navigation menus for user-friendly access to sections within my portfolio
     - Each navigation is reactive to hovering, clicking, and visited activity
+    - Each navigation is also reactive to screen sizes, which adjusts them to be dropdown menus fixed at the top-left and top-right corners.
     - Main Navigation Bar
         * Fixed position across the top of every page
         * Includes quicklinks to the Home Page, About Me Section, Projects Page, and Contact Me Page
@@ -21,7 +19,7 @@ The Personal Portfolio is a static website built using HTML and CSS. The site fe
         * This navigation menu is fixed to the left of every page
         * There is a scrollable aspect for different page sizes
         * **Home Page Navigation**
-            - Embedded Profile Picture
+            - Profile Picture Styling: Enhanced presentation of the profile image with rounded corners, borders, and hover effects.
             - Quicklinks to About Me sections
         * **Projects Page Navigation**
             - Quicklinks to the beginning of each project's section
@@ -32,28 +30,42 @@ The Personal Portfolio is a static website built using HTML and CSS. The site fe
 2. **Home Page**
     - The landing page welcomes visitors with a brief introduction about me
     - Provides a concise snapshot of who I am and sets the tone for the rest of the site
+    - Visual Appeal: A welcoming and professional color scheme with modern typography sets the tone for the website.
+    - Interactive Elements: Smooth transitions and hover effects make the page dynamic and engaging.
+
     - **About Me Section**
+        * Advanced Typography: Improved readability and layout using a combination of custom fonts, line spacing, and CSS text effects.
         * Offers more details about my personal and professional journey.
-        * Highlights my transition from customer service to software development, with a focus on my creativity, problem-solving abilities, and attention to detail
-        * Discusses my education, career goals, and interests, with a nod to my artistic background as a tattoo artist
+        * Highlights my transition from customer service to software development, with a focus on my creativity, problem-solving abilities, and attention to detail.
+        * Structured Content: Organized and well-styled sections for education, career goals, interests, and background.
     - **Skills Section**
+        * Professional Layout: Key information such as skills, certifications, and experience is highlighted with a clear, well-structured layout.
         * Features a visual representation of my technical skills
         * Includes programming languages, frameworks, tools, and software proficiency
 
 3. **Projects Page**
-    - Displays a portfolio of my completed projects, including descriptions, images, and links to their respective repositories.
+    - Enhanced Visuals: Project descriptions are designed with structured layouts, incorporating both text and images in an eye-catching format.
     - Technologies/tools used in each project are listed for easy reference.
 
 4. **Contact Page**
-    - Provides a simple contact form, along with contact methods and links to social media profiles (LinkedIn, GitHub, etc.).
+    - Styled Contact Form: The contact form is user-friendly, with clean layouts and interactive form fields.
+    - Provides a engaging contact form, along with contact methods and links to social media profiles (LinkedIn, GitHub, etc.).
 
 5. **Responsive Design**
-    - The site is fully responsive, adapting to different screen sizes for an optimized viewing experience on desktops, tablets, and mobile devices.
+    - Mobile-Friendly: The entire site is fully responsive, adapting to various screen sizes and devices using media queries.
 
 6. **Technologies Used**
     - *HTML:* Structuring the content and sections across multiple pages.
     - *CSS:* Styling for a modern and visually appealing design.
     - *GitHub:* Used for version control and hosting the code.
+
+7. **Interactive Styling**
+    - CSS pseudoclasses like :hover, :active, and :focus are applied across navigation menus, buttons, and form fields, providing users with feedback during interaction.
+    - Hover effects on buttons and links enhance user engagement.
+
+8. **Advanced CSS Techniques**
+    - Transitions and Animations: Smooth transitions and animations are used on elements like images and buttons to add interactivity.
+    - Button Styling: Custom buttons feature rounded corners, hover animations, and shadow effects.
 
 ## Getting Started
 
@@ -74,9 +86,9 @@ The Personal Portfolio is a static website built using HTML and CSS. The site fe
 4. Paste the link into your Git Bash and click 'Enter'
 * If you have GitHub Desktop, when you click on the '<> Code' button you will have an option to 'Open with GitHub Desktop'
 * If you have Visual Studio Code, when you click on the '<> Code' button you will have an option to 'Open with Visual Studio'
-* [HTTPS] (https://github.com/Tmiseray/Personal-Portfolio.git)
-* [SSH] (git@github.com:Tmiseray/Personal-Portfolio.git)
-* [GitHubCLI] (`gh repo clone Tmiseray/Personal-Portfolio`)
+* [HTTPS] (https://github.com/Tmiseray/Personal-Portfolio-Enhancement.git)
+* [SSH] (git@github.com:Tmiseray/Personal-Portfolio-Enhancement.git)
+* [GitHubCLI] (`gh repo clone Tmiseray/Personal-Portfolio-Enhancement`)
 
 *** **Download Option** ***
 1. From the GitHub Repository, click on the '<> Code' button
@@ -133,4 +145,4 @@ personal-portfolio/
 │   └── [profile-picture] 
 ```
 ## Contribution
-Contributions to improve the design or add new features are always welcome! If you encounter any issues or have suggestions for enhancement, feel free to open a new issue or submit a pull request.
+Contributions, suggestions, or improvements are welcome! Feel free to open an issue or submit a pull request if you'd like to enhance the project.
